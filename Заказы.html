@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<title>Platoon это новейший строительный сервис по строительсту и ремонту от бригад и частных лиц</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-orange w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="Главная.html" class="w3-bar-item w3-button w3-padding-large">PLATOON &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp</a>
+    <a href="Заказы.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ЗАКАЗЫ</a>
+    <a href="Бригады.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">БРИГАДЫ</a>
+    <a href="О компании.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">О КОМПАНИИ</a>
+    <div class="#login">
+      <button class="w3-bar-item w3-button w3-padding-large w3-hide-small" onclick="document.getElementById('#login').style.display='block'">ВХОД</button>  
+
+
+
+<!-- Ticket Modal(Ticket Modal Вход) -->
+  <div id="#login" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top w3-card-4">
+      <header class="w3-container w3-teal w3-center w3-padding-32"> 
+        <span onclick="document.getElementById('#login').style.display='none'" 
+       class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
+        <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Вход</h2>
+      </header>
+      <div class="w3-container">
+        <p><label>Логин</label></p>
+        <input class="w3-input w3-border" type="text" placeholder="Логин. Пример oleg@mail.ru">
+        <p><label></i> Пароль</label></p>
+        <input class="w3-input w3-border" type="text" placeholder="Пароль">
+        <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">Войти <i class="fa fa-check"></i></button>
+        <button class="w3-button w3-red w3-section" onclick="document.getElementById('#login').style.display='none'">Закрыть <i class="fa fa-remove"></i></button>
+        <p class="w3-right">Не зарегистрированы? <a href="#" class="w3-text-blue" onclick="document.getElementById('#reg').style.display='block'">Регистрация</a></p>
+      </div>
+    </div>
+  </div>
+
+
+ <!-- Ticket Modal(Ticket Modal Регистрация) -->
+  <div id="#reg" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top w3-card-4">
+      <header class="w3-container w3-teal w3-center w3-padding-32"> 
+        <span onclick="document.getElementById('#reg').style.display='none'" 
+       class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
+        <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Регистрация</h2>
+      </header>
+      <div class="w3-container">
+        <p><label>Контактные данные (Имя Фамилия)</label></p>
+        <input class="w3-input w3-border" type="text" placeholder="Иван Иванов">
+        <p><label></i> Электронная почта</label></p>
+        <input class="w3-input w3-border" type="text" placeholder="Ivan@mail.ru">
+        <p><label>Мобильный телефон </label></p>
+        <input class="w3-input w3-border" type="text" placeholder="+7 917 315 54 48">
+        <form class="w3-container w3-card-4">
+  <p><input class="w3-check" type="checkbox" checked="checked">
+  <label>Я согласен с правилами сервиса</label></p>
+        <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">Зарегистрироватся <i class="fa fa-check"></i></button>
+        <button class="w3-button w3-red w3-section" onclick="document.getElementById('#reg').style.display='none'">Закрыть <i class="fa fa-remove"></i></button>
+      </div>
+    </div>
+  </div>     
+    </div>
+  </div>
+</div>
+
+<!-- Navbar on small screens(на мобилльных) -->
+<div id="navDemo" href="Главная.html" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="Заказы.html" class="w3-bar-item w3-button w3-padding-large">ЗАКАЗЫ</a>
+  <a href="Бригады.html" class="w3-bar-item w3-button w3-padding-large">БРИГАДЫ</a>
+  <a href="О компании.html" class="w3-bar-item w3-button w3-padding-large">О КОМПАНИИ</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large">ВХОД</a>
+</div>
+
+<!-- Page content(Содержание страницы) -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+<div class="w3-container">
+    <h2 class="w3-wide w3-animate-zoom w3-center">Заказы</h2>
+    <h2 class="w3-opacity w3-animate-zoom w3-center"><p>Все заказы</p></h2>
+  <ul class="w3-ul w3-card-4">
+
+<li class="w3-bar">
+      <span onclick="this.parentElement.style.display='none'" class="w3-bar-item w3-button w3-white w3-xlarge w3-right">×</span>
+      <img src="images\work.png" class="w3-bar-item w3-circle w3-hide-small" style="width:85px">
+      <div class="w3-bar-item">
+        <span class="w3-large">Отделка керамической плиткой бойлерной в частном доме</span><br>
+        <span>Требуется отделка помещения бойлерной, площадью 22м2 в частном доме: стены керамической плиткой, пол керамогранит (материал Заказчика). Срок выполнения работ 2 рабочих дня.<br>
+        <br><div class="w3-left-align">
+  <button class="w3-right-align w3-button w3-blue w3-section" onclick="document.getElementById('ticketModal').style.display='none'">Принять Заказ</button>
+</div></span>
+      </div>
+    </li>
+
+<li class="w3-bar">
+      <span onclick="this.parentElement.style.display='none'" class="w3-bar-item w3-button w3-white w3-xlarge w3-right">×</span>
+      <img src="images\work.png" class="w3-bar-item w3-circle w3-hide-small" style="width:85px">
+      <div class="w3-bar-item">
+        <span class="w3-large">Небольшой ремонт пола в душевой</span><br>
+        <span>неоходимо переложить плитку на полу в душевой примерно 1 кв м<br>
+        <br><div class="w3-left-align">
+  <button class="w3-right-align w3-button w3-blue w3-section" onclick="document.getElementById('ticketModal').style.display='none'">Принять Заказ</button>
+</div></span>
+      </div>
+    </li>
+
+
+<li class="w3-bar">
+      <span onclick="this.parentElement.style.display='none'" class="w3-bar-item w3-button w3-white w3-xlarge w3-right">×</span>
+      <img src="images\work.png" class="w3-bar-item w3-circle w3-hide-small" style="width:85px">
+      <div class="w3-bar-item">
+        <span class="w3-large">Требуется шлифовка стяжки 12 кв.м</span><br>
+        <span>Требуется отделка помещения бойлерной, площадью 22м2 в частном доме: стены керамической плиткой, пол керамогранит (материал Заказчика). Срок выполнения работ 2 рабочих дня.<br>
+        <br><div class="w3-left-align">
+  <button class="w3-right-align w3-button w3-blue w3-section" onclick="document.getElementById('ticketModal').style.display='none'">Принять Заказ</button>
+</div></span>
+      </div>
+    </li>
+
+
+<li class="w3-bar">
+      <span onclick="this.parentElement.style.display='none'" class="w3-bar-item w3-button w3-white w3-xlarge w3-right">×</span>
+      <img src="images\work.png" class="w3-bar-item w3-circle w3-hide-small" style="width:85px">
+      <div class="w3-bar-item">
+        <span class="w3-large">Выполнить штукатурка кирпичных столбов 45 шт-270 м2</span><br>
+        <span>Необходимо произвести работы по штукатурке кирпичных столбов.Кирпич облицовочный.Ширина столба 750 мм.Высота 3 м.Площадь 1 столба 6 м2 с двух сторон.Набиваем сетку,выставляеи штукатурные уголки,штукатурим.Необходимо 2-3 штукатура со своим инструментом.Строго гр.РФ. без вредных привычек.Контроль качества.Работа с перспективой на отделку весной этих же столбов-плиткой и короедом.Приступать 16 ноября.Встречу лично на объекте.Все условия для проживания есть.Аванс на питание.Оплата по объему.Расходный инструмент и все материалы на объекте .Начало работ завтра.Строго.Звонить с утра начиная с 7 часов.<br>
+        <br><div class="w3-left-align">
+  <button class="w3-right-align w3-button w3-blue w3-section" onclick="document.getElementById('ticketModal').style.display='none'">Принять Заказ</button>
+</div></span>
+      </div>
+    </li>
+
+
+    <li class="w3-bar">
+      <span onclick="this.parentElement.style.display='none'" class="w3-bar-item w3-button w3-white w3-xlarge w3-right">×</span>
+      <img src="images\work.png" class="w3-bar-item w3-circle w3-hide-small" style="width:85px">
+      <div class="w3-bar-item">
+        <span class="w3-large">Объект в москве</span><br>
+        <span>Нужна бригада каменщиков (25-30 человек) Срочно!!
+Кирпич объем - 6 371,59 - 265,00 руб. м2
+Пеноблок объем 9 698,83 - 1 100,00 руб. м3
+ПГП объем 16 137,66 - 240,00 руб. м2<br>
+        <br><div class="w3-left-align">
+  <button class="w3-right-align w3-button w3-blue w3-section" onclick="document.getElementById('ticketModal').style.display='none'">Принять Заказ</button>
+</div></span>
+      </div>
+    </li>
+
+
+
+    <li class="w3-bar">
+      <span onclick="this.parentElement.style.display='none'" class="w3-bar-item w3-button w3-white w3-xlarge w3-right">×</span>
+      <img src="images\work.png" class="w3-bar-item w3-circle w3-hide-small" style="width:85px">
+      <div class="w3-bar-item">
+        <span class="w3-large">Демонтаж битума</span><br>
+        <span>В комнате 2.50х3.40 снять битум, который служил в качестве стяжки. Прежние хозяева наливали его тонким слоем, по этому отходит он с большим трудом, не откалывается, сами не смогли снять. Вероятно потребуется специальная техника (перфоратор или что то ещё). Химические методы растворения (керосином и пр.) не предлагать!!!<br>
+        <br><div class="w3-left-align">
+  <button class="w3-right-align w3-button w3-blue w3-section" onclick="document.getElementById('ticketModal').style.display='none'">Принять Заказ</button>
+</div></span>
+      </div>
+    </li>
+
+
+
+
+    <li class="w3-bar">
+      <span onclick="this.parentElement.style.display='none'" class="w3-bar-item w3-button w3-white w3-xlarge w3-right">×</span>
+      <img src="images\work.png" class="w3-bar-item w3-circle w3-hide-small" style="width:85px">
+      <div class="w3-bar-item">
+        <span class="w3-large">Диагностика подключения радиатора отопления в комнате.</span><br>
+        <span>Добрый день. Наш знакомый мастер к которому много раз обращались установил перекрывающие краны и радиатор рифар на 8 отсеков в жилую комнату. Установил на пролипропилен еще летом. Сейчас когда включили отопление обнаружилась проблема, верх батареи нагревается, низ нагревается только до 3-го отсека. Нужен специалист в р-не м. Нахимовский пр., который смог бы проверить правильность установки и в идеале решить проблему. Прошу прислать стоимость услуги.<br>
+        <br><div class="w3-left-align">
+  <button class="w3-right-align w3-button w3-blue w3-section" onclick="document.getElementById('ticketModal').style.display='none'">Принять Заказ</button>
+</div></span>
+      </div>
+    </li>
+
+
+    <li class="w3-bar">
+      <span onclick="this.parentElement.style.display='none'" class="w3-bar-item w3-button w3-white w3-xlarge w3-right">×</span>
+      <img src="images\work.png" class="w3-bar-item w3-circle w3-hide-small" style="width:85px">
+      <div class="w3-bar-item">
+        <span class="w3-large">Монтаж дома из домокомплекта из сип панелей</span><br>
+        <span>Сколько будет стоить работа по монтажу дома из СИП панелей. Дом с мансардой . 7.8х7.8<br>
+        <br><div class="w3-left-align">
+  <button class="w3-right-align w3-button w3-blue w3-section" onclick="document.getElementById('ticketModal').style.display='none'">Принять Заказ</button>
+</div></span>
+      </div>
+    </li>
+  </div>
+</ul>
+</div>
+  <!-- The Contact Section(Контактный раздел) -->
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+    <h2 class="w3-wide w3-center">Контакты</h2>
+    <p class="w3-opacity w3-center"><i>У вас какой то вопрос пишите мы с радостью ответим!</i></p>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-col m6 w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker" style="width:30px"></i> Набережные Челны<br>
+        <i class="fa fa-phone" style="width:30px"></i> Telegram: +7 917 255 18 85<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Электронная почта: Platoon1591@gmail.com<br>
+      </div>
+      <div class="w3-col m6">
+        <form action="/action_page.php" target="_blank">
+          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+            </div>
+          </div>
+          <input class="w3-input w3-border" type="text" placeholder="Ваш вопрос" required name="Message">
+          <button class="w3-button w3-black w3-section w3-right" type="submit">Отправить</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+<!-- End Page Content(Содержание конечной страницы) -->
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <i class="fa fa-vk w3-hover-opacity"><a href="https://vk.com/club156886390"></a></i>
+  <i class="fa fa-instagram w3-hover-opacity"><a href="https://www.instagram.com/platoon1591"></a></i>
+  <i class="fa fa-google-plus w3-hover-opacity"><a href="https://www.instagram.com/platoon1591"></a></i> 
+  <p class="w3-medium">Сделано с помощью <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 8000);    
+}
+
+// (Используется для переключения меню на маленькие экраны при нажатии на кнопку меню)
+function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<title>Platoon это новейший строительный сервис по строительсту и ремонту от бригад и частных лиц</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-orange w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="Главная.html" class="w3-bar-item w3-button w3-padding-large">PLATOON &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp</a>
+    <a href="Заказы.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ЗАКАЗЫ</a>
+    <a href="Бригады.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">БРИГАДЫ</a>
+    <a href="О компании.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">О КОМПАНИИ</a>
+    <div class="#login">
+<button class="w3-bar-item w3-button w3-padding-large w3-hide-small" onclick="document.getElementById('#login').style.display='block'">ВХОД</button>  
+
+
+
+<!-- Ticket Modal(Ticket Modal Вход) -->
+  <div id="#login" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top w3-card-4">
+      <header class="w3-container w3-teal w3-center w3-padding-32"> 
+        <span onclick="document.getElementById('#login').style.display='none'" 
+       class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
+        <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Вход</h2>
+      </header>
+      <div class="w3-container">
+        <p><label>Логин</label></p>
+        <input class="w3-input w3-border" type="text" placeholder="Логин. Пример oleg@mail.ru">
+        <p><label></i> Пароль</label></p>
+        <input class="w3-input w3-border" type="text" placeholder="Пароль">
+        <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">Войти <i class="fa fa-check"></i></button>
+        <button class="w3-button w3-red w3-section" onclick="document.getElementById('#login').style.display='none'">Закрыть <i class="fa fa-remove"></i></button>
+        <p class="w3-right">Не зарегистрированы? <a href="#" class="w3-text-blue" onclick="document.getElementById('#reg').style.display='block'">Регистрация</a></p>
+      </div>
+    </div>
+  </div>
+
+
+ <!-- Ticket Modal(Ticket Modal Регистрация) -->
+  <div id="#reg" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top w3-card-4">
+      <header class="w3-container w3-teal w3-center w3-padding-32"> 
+        <span onclick="document.getElementById('#reg').style.display='none'" 
+       class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
+        <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Регистрация</h2>
+      </header>
+      <div class="w3-container">
+        <p><label>Контактные данные (Имя Фамилия)</label></p>
+        <input class="w3-input w3-border" type="text" placeholder="Иван Иванов">
+        <p><label></i> Электронная почта</label></p>
+        <input class="w3-input w3-border" type="text" placeholder="Ivan@mail.ru">
+        <p><label>Мобильный телефон </label></p>
+        <input class="w3-input w3-border" type="text" placeholder="+7 917 315 54 48">
+        <form class="w3-container w3-card-4">
+  <p><input class="w3-check" type="checkbox" checked="checked">
+  <label>Я согласен с правилами сервиса</label></p>
+        <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">Зарегистрироватся <i class="fa fa-check"></i></button>
+        <button class="w3-button w3-red w3-section" onclick="document.getElementById('#reg').style.display='none'">Закрыть <i class="fa fa-remove"></i></button>
+      </div>
+    </div>
+  </div>   
+    </div>
+  </div>
+</div>
+
+<!-- Navbar on small screens(на мобилльных) -->
+<div id="navDemo" href="Главная.html" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="Заказы.html" class="w3-bar-item w3-button w3-padding-large">ЗАКАЗЫ</a>
+  <a href="Бригады.html" class="w3-bar-item w3-button w3-padding-large">БРИГАДЫ</a>
+  <a href="О компании.html" class="w3-bar-item w3-button w3-padding-large">О КОМПАНИИ</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large">ВХОД</a>
+</div>
+
+<!-- Page content(Содержание страницы) -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <div class="w3-container">
+  <h2 class="w3-wide w3-animate-zoom w3-center">О компании</h2>
+  <h2 class="w3-opacity w3-animate-zoom w3-center"><p></p></h2>
+  <ul class="w3-ul w3-card-4">
+
+<h4 class="w3-justify w3-center w3-animate-zoom">Общество с ограниченной ответственностью «Группа Август. Организация является юридическим лицом и содержит круглую печать с указанием своего полного названия, а таким образом ведь штампы, бумаги и расчётный счет, открытый в Сбербанке РФ. Организация реализовывает собственную деятельность в согласовании с Уставом и законодательством РФ. Главным видом работы компании считается предоставление строительных услуг в частных и коммерческих секторах.</h4>
+<h4 class="w3-justify w3-center w3-animate-zoom">Общество с ограниченной ответственностью «Группа Август. Организация является юридическим лицом и содержит круглую печать с указанием своего полного названия, а таким образом ведь штампы, бумаги и расчётный счет, открытый в Сбербанке РФ. Организация реализовывает собственную деятельность в согласовании с Уставом и законодательством РФ. Главным видом работы компании считается предоставление строительных услуг в частных и коммерческих секторах.</h4>
+<h4 class="w3-justify w3-center w3-animate-zoom">Офис расположен в ГАУ Технопарк в сфере высоких технологий "ИТ-парк". Месторасположение является очень удобным, так как созданный на территории Республики Татарстан в рамках комплексной программы «Создание в Российской Федерации технопарков в сфере высоких технологий». Основная цель технопарка — ускорить развитие ИТ-компаний и увеличить долю ИТ-отрасли в экономике Республики Татарстан. Недалеко находятся транспортные развязки: ИТ-автобус ходит по основным маршрутам города.</h4>  
+<h4 class="w3-justify w3-center w3-animate-zoom">ООО "Группа Август", образованное в 2017 г., считается юридическим лицом - коммерческой организацией, уставной основной капитал которого поделен в части. 
+  Имущество ООО «Группа Август» относится ему в праве собственности и образовывается из:<br>
+• вкладов учредителей (участников) в уставной капитал;<br>
+• продукции, произведенной обществом в ходе его деятельности;<br>
+• получение прибыли;<br>
+• иного имущества, приобретенного обществом согласно другим причинам, допускаемым законодательством.<br></h4>
+<h4 class="w3-justify w3-center w3-animate-zoom">Учредителями ООО «Группа Август» являются физические лица. Уставной основной капитал Общества устанавливает наименьший размер собственности Общества, гарантирующего интересы его кредиторов.
+Высшим органом управления ООО «Группа Август» считается общее собрание его участников, которое реализовывает собственную деятельность в соответствии с российским законодательством на основании Устава и Учредительного Договора ООО «Группа Август».</h4>
+<h4 class="w3-justify w3-center w3-animate-zoom">Общее собрание участников имеет следующие полномочия:<br>
+• определение главных направлений деятельности Общества, а кроме того утверждение постановления о участии в ассоциациях и иных объединениях коммерческих организаций;<br>
+• изменение Устава Общества, в этом числе изменения объема уставного капитала, введение изменений в учредительный договор;<br>
+• принимать нормативные документы, стабилизирующие взаимоотношения внутри Общества;<br>
+• давать акционерам советы относительно формирования филиалов, офисов, филиалов либо дочерних компаний;<br>
+• по согласовыванию с генеральным директором назначать, распускать должностных лиц правления Общества;<br>
+• определять порядок представления абсолютно всех счетов, отчетов, заявлений, систем расчета прибыли и потерь, в том числе правила, относящиеся к амортизации;</h4>
+<h4 class="w3-justify w3-center w3-animate-zoom">Управление текущей деятельностью Общества осуществляется Генеральным директором – единоличным исполнительным органом общества. Генеральный директор подотчетен единому собранию участников и избирается на срок 3 года с правом переизбрания.</h4>
+
+
+  <!-- The Contact Section(Контактный раздел) -->
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+    <h2 class="w3-wide w3-center">Контакты</h2>
+    <p class="w3-opacity w3-center"><i>У вас какой то вопрос пишите мы с радостью ответим!</i></p>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-col m6 w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker" style="width:30px"></i> Набережные Челны<br>
+        <i class="fa fa-phone" style="width:30px"></i> Telegram: +7 917 255 18 85<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Электронная почта: Platoon1591@gmail.com<br>
+      </div>
+      <div class="w3-col m6">
+        <form action="/action_page.php" target="_blank">
+          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+            </div>
+          </div>
+          <input class="w3-input w3-border" type="text" placeholder="Ваш вопрос" required name="Message">
+          <button class="w3-button w3-black w3-section w3-right" type="submit">Отправить</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+<!-- End Page Content(Содержание конечной страницы) -->
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <i class="fa fa-vk w3-hover-opacity"><a href="https://vk.com/club156886390"></a></i>
+  <i class="fa fa-instagram w3-hover-opacity"><a href="https://www.instagram.com/platoon1591"></a></i>
+  <i class="fa fa-google-plus w3-hover-opacity"><a href="https://www.instagram.com/platoon1591"></a></i> 
+  <p class="w3-medium">Сделано с помощью <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 8000);    
+}
+
+// (Используется для переключения меню на маленькие экраны при нажатии на кнопку меню)
+function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+
+
+
+</body>
+</html>
